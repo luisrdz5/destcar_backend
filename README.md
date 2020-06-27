@@ -37,7 +37,6 @@ La arquitectura de Backend Estara compuesta de los siguientes endpoints:
 `npm run build`
 
 ## Desarrolladores
-* David Flores Mauricio
 * Luis Antonio Rodríguez García 
 
 ### Contribuir

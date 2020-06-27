@@ -74,7 +74,6 @@ class mapsAPI  {
                 // obtengo bounds
             });
             //calculating the rate 
-            console.log(`Maps.js baserate: ${baseRate} distance:${distance} time:${time}`);
             let total = baseRate + ((distance / 1000) * costByKM)+((time / 60) * costByMinute); 
             if(total<minPayment){
                 total=minPayment
