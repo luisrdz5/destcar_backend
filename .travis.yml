@@ -2,7 +2,7 @@ language: nodejs
 cache:
     directories:
         - node_modules
-        - ~/.npm
+        - ~/.npm       
 node_js:
     - '12'
 git:
@@ -18,7 +18,7 @@ deploy:
     provide: heroku
     skip-cleanup: true
     keep-history: true
-    api_key: apiKey # desde heroku
+    api_key: $apiKey 
     app: destcar_backend
     on:
         repo: luisrdz5/destcar_backend
