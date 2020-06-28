@@ -18,7 +18,7 @@ deploy:
     provide: heroku
     skip-cleanup: true
     keep-history: true
-    api_key: abcbee53-d42e-4e8d-972d-dadb6ad2bd8a
-    app: destcar_backend
+    api_key: $HEROKU_TOKEN
+    app: destcar-backend
     on:
         repo: luisrdz5/destcar_backend
