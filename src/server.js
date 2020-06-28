@@ -9,6 +9,11 @@ const paymentsAPI = require('./routes/paymentsAPI');
 const tripsAPI = require('./routes/tripsAPI');
 const authAPI = require('./routes/auth');
 
+app.get('/', (req, res) => {
+  let userInfo = req.header("user-agent");
+  res.send(`New UserInfo: ${userInfo}`);
+});
+
 app.use(express.json());
 authAPI(app);
 tripsAPI(app);
